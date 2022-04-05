@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h1>Xander's Pizzeria</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Sauce:</legend>
+                <div>
+                    <input type="radio" id="traditional" name="sauce">
+                    <label for="traditional">Traditional Tomato Sauce</label>
+                </div>
+                <div>
+                    <input type="radio" id="pesto" name="sauce">
+                    <label for="pesto">Pesto Sauce</label>
+                </div>
+                <div>
+                    <input type="radio" id="creamyAlfredo" name="sauce">
+                    <label for="creamyAlfredo">Creamy Alfredo Sauce</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Size:</legend>
+                <div>
+                    <input type="radio" id="small" name="size">
+                    <label for="small">Small (10")</label>
+                </div>
+                <div>
+                    <input type="radio" id="medium" name="size">
+                    <label for="medium">Medium (12")</label>
+                </div>
+                <div>
+                    <input type="radio" id="large" name="size">
+                    <label for="large">Large (14")</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Toppings:</legend>
+                <div>
+                    <input type="checkbox" id="pepperoni" name="pepperoni" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="olives" name="olives" value="olives">
+                    <label for="olives">Olives</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Delivery:</legend>
+                <label for="container">Please Choose One</label>
+                <select name="container" id="container">
+                    <option value="cup">In-house delivery</option>
+                    <option value="sugar">To-go/Pickup</option>
+                    <option value="waffle">Pizzeria table eating</option>
+                </select>
+                <label for="address">Address: (optional)</label>
+                <textarea id="address" name="address" rows="2" cols="20" placeholder="If house delivery, enter address line here."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Special Combinations:</legend>
+                <label for="SpecialCombinations">Choose Your Own Combinations:</label>
+                <textarea id="SpecialCombinations" name="SpecialCombinations" rows="4" cols="10" placeholder="Vegetarian, half-half, ect."></textarea>
+            </fieldset>
+            <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
